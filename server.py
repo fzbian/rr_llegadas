@@ -46,7 +46,7 @@ def get_arrival_time(local, fecha):
     return datetime.strptime(horarios[dia_semana], "%I:%M %p").time() if dia_semana in horarios else None
 
 def generate_arrival_difference_table(local, fecha_inicio, fecha_fin):
-    engine = create_engine(f'mysql+mysqlconnector://{os.getnev("DB_USER")}:{os.getenv("DB_PASSWORD")}@{os.getenv("DB_HOST")}/{os.getenv("DB_NAME")}')
+    engine = create_engine(f'mysql+mysqlconnector://{os.getenv("DB_USER")}:{os.getenv("DB_PASSWORD")}@{os.getenv("DB_HOST")}/{os.getenv("DB_NAME")}')
     
     query = f"""
     SELECT fecha, hora_llegada
