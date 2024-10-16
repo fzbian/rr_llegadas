@@ -26,10 +26,10 @@ def get_arrival_time(local, fecha):
         horarios = {
             "Monday": "09:00 AM",
             "Tuesday": "09:00 AM",
-            "Wednesday": "09:00 AM",
+            "Wednesday": "10:00 AM",
             "Thursday": "09:00 AM",
             "Friday": "09:00 AM",
-            "Saturday": "09:00 AM",
+            "Saturday": "10:00 AM",
             "Sunday": "10:00 AM"
         }
     elif local == "SAJ":
